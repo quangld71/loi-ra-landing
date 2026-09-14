@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lối Ra - Dựng Kênh Bán Hàng Riêng, Thoát Phụ Thuộc Phí Sàn</title>
+  <meta name="description" content="Kiểm tra lợi nhuận miễn phí 15 phút cho biết chính xác shop anh/chị đang mất bao nhiêu vào phí sàn Shopee/TikTok Shop. Sau đó dựng kênh bán hàng riêng: landing page + VietQR + báo đơn Telegram, bàn giao trong 5 ngày.">
+  <meta property="og:title" content="Lối Ra - Thoát Phụ Thuộc Phí Sàn Shopee/TikTok Shop">
+  <meta property="og:description" content="Kiểm tra lợi nhuận miễn phí + dựng kênh bán hàng riêng cho seller TMĐT Việt Nam.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:,">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E3A5F',
+            secondary: '#3B6997',
+            accent: '#E0A458',
+            ink: '#0B1B2B'
+          },
+          fontFamily: {
+            heading: ['Be Vietnam Pro', 'sans-serif'],
+            body: ['Noto Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Noto Sans', sans-serif; }
+    h1, h2, h3, h4, .heading-font { font-family: 'Be Vietnam Pro', sans-serif; }
+  </style>
+</head>
+<body class="font-body text-ink bg-[#F5F7FA]">
+
+<!-- IMPORTANT: thay số Zalo/hotline placeholder bên dưới bằng số thật trước khi đăng -->
+
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#F5F7FA]/95 backdrop-blur-md border-b border-primary/10">
+  <div class="max-w-6xl mx-auto px-5 py-4 flex justify-between items-center">
+    <span class="heading-font font-extrabold text-xl text-primary tracking-tight">LỐI RA</span>
+    <div class="hidden md:flex gap-8 text-sm font-medium text-ink/70">
+      <a href="#van-de" class="hover:text-primary transition-colors">Vấn đề</a>
+      <a href="#giai-phap" class="hover:text-primary transition-colors">Kiểm tra miễn phí</a>
+      <a href="#dich-vu" class="hover:text-primary transition-colors">Dựng kênh riêng</a>
+      <a href="#faq" class="hover:text-primary transition-colors">Câu hỏi</a>
+    </div>
+    <a href="https://zalo.me/0983062158" class="bg-accent text-ink px-5 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity cursor-pointer">
+      Nhận Kiểm Tra Miễn Phí
+    </a>
+  </div>
+</nav>
+
+<!-- Hero: text-only oversized headline, no gradient -->
+<section class="pt-32 pb-20 px-5 bg-[#F5F7FA]">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="text-secondary font-semibold text-sm tracking-wide uppercase mb-5">Dành cho seller Shopee &amp; TikTok Shop tại Việt Nam</p>
+    <h1 class="heading-font text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 text-ink">
+      Shop bán chạy đều,<br class="hidden sm:block"> nhưng cuối tháng vẫn không dư?
+    </h1>
+    <p class="text-lg sm:text-xl text-ink/70 mb-10 max-w-2xl mx-auto leading-relaxed">
+      Không phải anh/chị bán tệ. Phí sàn — hoa hồng, ads, content, voucher — đang âm thầm ăn mất một phần lợi nhuận mà nhiều seller không để ý tới. Em tính giúp con số thật, miễn phí, 15 phút.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a href="https://zalo.me/0983062158" class="inline-block bg-accent text-ink px-8 py-4 rounded-xl text-lg font-bold hover:opacity-90 transition-opacity cursor-pointer">
+        Nhắn Zalo nhận kiểm tra lợi nhuận miễn phí →
+      </a>
+      <a href="#dich-vu" class="text-primary font-semibold underline underline-offset-4 hover:text-secondary transition-colors cursor-pointer">
+        Xem trước dịch vụ dựng kênh riêng
+      </a>
+    </div>
+    <p class="mt-6 text-sm text-ink/50">Không thu phí kiểm tra. Không ràng buộc gì cả — có số liệu rồi anh/chị tự quyết.</p>
+  </div>
+</section>
+
+<!-- Problem: asymmetric 2-column, real sourced stat next to claim -->
+<section id="van-de" class="py-20 px-5 bg-white border-y border-primary/10">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-5 gap-10 items-center">
+    <div class="md:col-span-3">
+      <h2 class="heading-font text-3xl font-bold mb-5">Phí sàn đang tăng liên tục — không phải cảm giác, là thật</h2>
+      <p class="text-ink/70 leading-relaxed mb-4">
+        Từ 2026, Shopee và TikTok Shop đồng loạt tăng phí nền tảng. Trên TikTok Shop, một sản phẩm biên lợi nhuận gộp 50% trước đây giữ lại khoảng 35% sau phí sàn — giờ chỉ còn khoảng 12%.
+      </p>
+      <p class="text-ink/70 leading-relaxed">
+        Nhiều shop đang hoạt động cho biết lợi nhuận ròng sau cùng chỉ còn <span class="font-semibold text-primary">7-10% doanh thu</span>. Doanh thu vẫn tăng, nhưng phần anh/chị thực sự cầm về thì ngày càng mỏng.
+      </p>
+    </div>
+    <div class="md:col-span-2 bg-primary text-white rounded-2xl p-8 text-center">
+      <p class="text-5xl heading-font font-extrabold text-accent mb-2">~12%</p>
+      <p class="text-sm text-white/80 leading-relaxed">là phần lợi nhuận gộp còn lại sau khi trừ hoa hồng + ads + content + phí nền tảng trên TikTok Shop, so với ~35% của vài năm trước.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Solution: Kiểm tra miễn phí, 3-step -->
+<section id="giai-phap" class="py-20 px-5 bg-[#F5F7FA]">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14 max-w-2xl mx-auto">
+      <h2 class="heading-font text-3xl font-bold mb-4">Trước khi tính chuyện thay đổi gì — biết chính xác mình đang mất bao nhiêu đã</h2>
+      <p class="text-ink/70">Kiểm tra lợi nhuận miễn phí 15 phút, không cần cài đặt gì, không thu phí.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+        <h3 class="font-bold text-lg mb-2 heading-font">Gửi vài số liệu cơ bản</h3>
+        <p class="text-ink/70 text-sm leading-relaxed">Giá vốn, giá bán, số đơn/tháng của 1-2 sản phẩm chủ lực — nhắn qua Zalo là đủ.</p>
+      </div>
+      <div>
+        <div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+        <h3 class="font-bold text-lg mb-2 heading-font">Em tính lợi nhuận thực</h3>
+        <p class="text-ink/70 text-sm leading-relaxed">Trừ đủ: giá vốn, phí sàn, ads, voucher, hoàn hàng — ra đúng số anh/chị thực sự giữ lại.</p>
+      </div>
+      <div>
+        <div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+        <h3 class="font-bold text-lg mb-2 heading-font">Nhận kết quả + gợi ý</h3>
+        <p class="text-ink/70 text-sm leading-relaxed">Con số cụ thể + hướng khắc phục. Dùng luôn hay không, tùy anh/chị.</p>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+      <a href="https://zalo.me/0983062158" class="inline-block bg-accent text-ink px-8 py-4 rounded-xl text-lg font-bold hover:opacity-90 transition-opacity cursor-pointer">
+        Nhắn "KIỂM TRA" qua Zalo →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Core offer: sau khi kiểm tra -->
+<section id="dich-vu" class="py-20 px-5 bg-white border-y border-primary/10">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14 max-w-2xl mx-auto">
+      <p class="text-secondary font-semibold text-sm tracking-wide uppercase mb-3">Sau khi kiểm tra, nếu anh/chị muốn đi xa hơn</p>
+      <h2 class="heading-font text-3xl font-bold mb-4">Gói Dựng Kênh Bán Hàng Độc Lập</h2>
+      <p class="text-ink/70">Vẫn bán trên Shopee/TikTok như bình thường — có thêm một kênh riêng không mất % cho sàn.</p>
+    </div>
+
+    <!-- 2+1 asymmetric feature layout, not 3 symmetric cards -->
+    <div class="grid md:grid-cols-3 gap-6 mb-14">
+      <div class="md:col-span-2 bg-[#F5F7FA] rounded-2xl p-8">
+        <svg class="w-8 h-8 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <h3 class="font-bold text-lg mb-2 heading-font">Landing page bán hàng riêng</h3>
+        <p class="text-ink/70 text-sm leading-relaxed">Thiết kế theo đúng ngành hàng của shop — không phải template chung chung. Anh/chị duyệt bản nháp trước khi làm tiếp.</p>
+      </div>
+      <div class="bg-[#F5F7FA] rounded-2xl p-8">
+        <svg class="w-8 h-8 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <h3 class="font-bold text-lg mb-2 heading-font">Thanh toán VietQR</h3>
+        <p class="text-ink/70 text-sm leading-relaxed">Qua SePay — khách quét mã, tiền về thẳng tài khoản ngân hàng của anh/chị.</p>
+      </div>
+      <div class="bg-[#F5F7FA] rounded-2xl p-8">
+        <svg class="w-8 h-8 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+        <h3 class="font-bold text-lg mb-2 heading-font">Báo đơn qua Telegram</h3>
+        <p class="text-ink/70 text-sm leading-relaxed">Biết ngay có đơn mới trên điện thoại — không cần mở app sàn kiểm tra liên tục.</p>
+      </div>
+      <div class="md:col-span-2 bg-[#F5F7FA] rounded-2xl p-8">
+        <svg class="w-8 h-8 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+        <h3 class="font-bold text-lg mb-2 heading-font">Tự động hóa thông báo giao hàng</h3>
+        <p class="text-ink/70 text-sm leading-relaxed">Khách được cập nhật trạng thái đơn hàng cơ bản mà anh/chị không phải nhắn tay từng người. Bàn giao toàn bộ trong 3-5 ngày làm việc.</p>
+      </div>
+    </div>
+
+    <!-- Value stack + pricing -->
+    <div class="bg-primary rounded-3xl p-8 md:p-12 text-white">
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <h3 class="heading-font text-2xl font-bold mb-6">Anh/chị nhận được gì</h3>
+          <ul class="space-y-4 text-white/90 text-sm">
+            <li class="flex justify-between border-b border-white/15 pb-3">
+              <span>Landing page + VietQR + Telegram + delivery setup</span>
+              <span class="font-semibold whitespace-nowrap ml-4">2.997.000đ</span>
+            </li>
+            <li class="flex justify-between border-b border-white/15 pb-3">
+              <span>Kiểm tra lợi nhuận &amp; phí sàn (đã dùng ở bước trước)</span>
+              <span class="font-semibold whitespace-nowrap ml-4">500.000đ</span>
+            </li>
+            <li class="flex justify-between border-b border-white/15 pb-3">
+              <span>Tư vấn định giá lại theo lợi nhuận thực (30 phút)</span>
+              <span class="font-semibold whitespace-nowrap ml-4">500.000đ</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Hỗ trợ kỹ thuật qua Zalo 30 ngày sau bàn giao</span>
+              <span class="font-semibold whitespace-nowrap ml-4">700.000đ</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white/10 rounded-2xl p-8 flex flex-col justify-center text-center">
+          <p class="text-white/70 text-sm mb-1">Tổng giá trị</p>
+          <p class="text-2xl font-semibold line-through text-white/50 mb-4">4.697.000đ</p>
+          <p class="text-white/70 text-sm mb-1">Giá pilot — chỉ 5 khách đầu tiên</p>
+          <p class="heading-font text-5xl font-extrabold text-accent mb-1">1.497.000đ</p>
+          <p class="text-white/60 text-xs mb-6">Giá chính thức từ khách thứ 6: 2.997.000đ</p>
+
+          <div class="bg-white rounded-xl p-5 mb-4">
+            <img src="https://qr.sepay.vn/img?acc=10983431696&bank=VPBank&amount=748500&des=COCLOIRA&template=compact" alt="Quét mã để đặt cọc giữ suất pilot" class="mx-auto w-44 h-44 rounded-lg" />
+            <p class="text-ink font-semibold text-sm mt-3">Đặt cọc giữ suất: 748.500đ</p>
+            <p class="text-ink/60 text-xs mt-1">VPBank — STK 10983431696</p>
+            <p class="text-ink/60 text-xs">Nội dung: COCLOIRA + tên shop của anh/chị</p>
+          </div>
+          <p class="text-white/60 text-xs mb-5">Chuyển xong, nhắn Zalo kèm ảnh chụp để em giữ suất và xác nhận ngay.</p>
+
+          <a href="https://zalo.me/0983062158" class="text-accent font-semibold underline underline-offset-4 hover:text-white transition-colors cursor-pointer text-sm">
+            Hoặc nhắn Zalo trước nếu muốn hỏi thêm →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guarantee -->
+    <div class="mt-10 bg-[#F5F7FA] border border-primary/15 rounded-2xl p-8 flex flex-col sm:flex-row gap-5 items-start">
+      <svg class="w-9 h-9 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      <div>
+        <h3 class="font-bold text-lg mb-1 heading-font">Cam kết thực thi — không cam kết doanh thu</h3>
+        <p class="text-ink/70 text-sm leading-relaxed">
+          Bàn giao đúng như bản nháp anh/chị đã duyệt, trong 5 ngày làm việc. Trễ hẹn hoặc không đúng thiết kế đã thống nhất — hoàn 100% tiền cọc, không cần hỏi lý do.
+          Em không hứa doanh thu hay số đơn hàng sau khi bàn giao, vì điều đó phụ thuộc vào sản phẩm, giá, thị trường riêng của từng shop.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Differentiation -->
+<section class="py-20 px-5 bg-white">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="heading-font text-3xl font-bold text-center mb-4">Không phải chỉ làm đẹp một trang web</h2>
+    <p class="text-ink/70 text-center mb-12 max-w-2xl mx-auto">Canva hay Wix giúp anh/chị có một trang đẹp. Nhưng thanh toán, báo đơn, và giao hàng vẫn phải tự ráp nối rời rạc — mất nhiều ngày mày mò, dễ sai sót.</p>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="border-l-4 border-primary/20 pl-6">
+        <p class="text-sm font-semibold text-ink/50 uppercase mb-2">Tự làm bằng Canva/Wix</p>
+        <p class="text-ink/70 text-sm leading-relaxed">Có trang đẹp, nhưng thanh toán qua chuyển khoản thủ công, không ai báo đơn, tự nhắn từng khách xác nhận giao hàng.</p>
+      </div>
+      <div class="border-l-4 border-accent pl-6">
+        <p class="text-sm font-semibold text-primary uppercase mb-2">Gói Dựng Kênh Bán Hàng Độc Lập</p>
+        <p class="text-ink/70 text-sm leading-relaxed">Trang bán hàng + VietQR + báo đơn Telegram + thông báo giao hàng đã ráp sẵn thành một hệ thống, bàn giao trong 5 ngày.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 px-5 bg-[#F5F7FA]">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="heading-font text-3xl font-bold text-center mb-12">Câu hỏi thường gặp</h2>
+    <div class="space-y-4">
+      <div class="bg-white border border-primary/10 rounded-xl overflow-hidden">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('svg').classList.toggle('rotate-180')" class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center cursor-pointer hover:bg-primary/5">
+          Chưa ai làm trước, sao em tin được?
+          <svg class="w-5 h-5 transition-transform shrink-0 ml-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="hidden px-6 pb-4 text-ink/70 text-sm leading-relaxed">Đúng là dịch vụ này còn mới, chưa có case study để khoe. Vì vậy bước kiểm tra hoàn toàn miễn phí — anh/chị thấy con số thật của shop mình trước, không mất gì để thử. Với gói chính, thanh toán chia 2 lần: cọc 50% để bắt đầu, duyệt bản nháp xong mới trả nốt 50% còn lại.</div>
+      </div>
+      <div class="bg-white border border-primary/10 rounded-xl overflow-hidden">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('svg').classList.toggle('rotate-180')" class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center cursor-pointer hover:bg-primary/5">
+          Lỡ đặt cọc mà không đúng ý thì sao?
+          <svg class="w-5 h-5 transition-transform shrink-0 ml-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="hidden px-6 pb-4 text-ink/70 text-sm leading-relaxed">Anh/chị duyệt bản nháp trước khi thanh toán 50% còn lại. Nếu bàn giao trễ hẹn hoặc không đúng bản nháp đã duyệt, em hoàn 100% tiền cọc — không cần hỏi lý do. Có biên nhận ghi rõ điều khoản trước khi bắt đầu.</div>
+      </div>
+      <div class="bg-white border border-primary/10 rounded-xl overflow-hidden">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('svg').classList.toggle('rotate-180')" class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center cursor-pointer hover:bg-primary/5">
+          Có cam kết tăng doanh thu không?
+          <svg class="w-5 h-5 transition-transform shrink-0 ml-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="hidden px-6 pb-4 text-ink/70 text-sm leading-relaxed">Không. Em chỉ cam kết bàn giao đúng phạm vi công việc đã thống nhất, đúng hẹn. Doanh thu sau đó phụ thuộc vào sản phẩm, giá bán và thị trường riêng của từng shop — em không hứa những điều ngoài tầm kiểm soát của mình.</div>
+      </div>
+      <div class="bg-white border border-primary/10 rounded-xl overflow-hidden">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('svg').classList.toggle('rotate-180')" class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center cursor-pointer hover:bg-primary/5">
+          Em vẫn bán trên Shopee/TikTok Shop được không?
+          <svg class="w-5 h-5 transition-transform shrink-0 ml-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="hidden px-6 pb-4 text-ink/70 text-sm leading-relaxed">Được, kênh riêng là kênh bổ sung song song, không phải rời sàn hoàn toàn. Anh/chị vẫn duy trì gian hàng trên sàn như bình thường, đồng thời có thêm kênh không mất % cho những khách đã biết đến shop.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-20 px-5 bg-primary text-white">
+  <div class="max-w-2xl mx-auto text-center">
+    <h2 class="heading-font text-3xl font-bold mb-4">Bắt đầu bằng con số thật, không phải lời hứa</h2>
+    <p class="text-white/70 mb-8">15 phút, miễn phí, không ràng buộc. Biết mình đang mất bao nhiêu trước khi quyết định làm gì tiếp.</p>
+    <a href="https://zalo.me/0983062158" class="inline-block bg-accent text-ink px-8 py-4 rounded-xl text-lg font-bold hover:opacity-90 transition-opacity cursor-pointer">
+      Nhắn Zalo nhận kiểm tra lợi nhuận miễn phí →
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-ink text-white/60 py-10 px-5">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+    <p class="font-bold text-white heading-font text-lg">LỐI RA</p>
+    <p>Zalo/Hotline: 0983 062 158</p>
+    <p>&copy; 2026 Lối Ra.</p>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t border-primary/10 p-3">
+  <a href="https://zalo.me/0983062158" class="block text-center bg-accent text-ink px-6 py-3.5 rounded-xl font-bold cursor-pointer">
+    Nhận Kiểm Tra Miễn Phí →
+  </a>
+</div>
+<div class="h-16 md:hidden"></div>
+
+</body>
+</html>
