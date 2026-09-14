@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Điền thông tin dự án - Lối Ra</title>
+  <meta name="description" content="Form thu thập thông tin để bắt đầu dựng kênh bán hàng độc lập cho shop của anh/chị.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:,">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#1E3A5F', secondary: '#3B6997', accent: '#E0A458', ink: '#0B1B2B' },
+          fontFamily: { heading: ['Be Vietnam Pro', 'sans-serif'], body: ['Noto Sans', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Noto Sans', sans-serif; }
+    h1, h2, .heading-font { font-family: 'Be Vietnam Pro', sans-serif; }
+    .f-input { width: 100%; border: 1px solid rgba(30,58,95,0.2); border-radius: 0.6rem; padding: 0.7rem 0.9rem; font-size: 1rem; background: white; }
+    .f-input:focus { outline: 2px solid #1E3A5F; outline-offset: 1px; }
+    .f-label { display: block; font-size: 0.85rem; font-weight: 600; color: rgba(11,27,43,0.7); margin-bottom: 0.35rem; }
+    .f-section { font-size: 0.8rem; font-weight: 700; color: #3B6997; text-transform: uppercase; letter-spacing: 0.04em; margin: 1.75rem 0 0.75rem; }
+    .f-section:first-of-type { margin-top: 0; }
+  </style>
+</head>
+<body class="font-body text-ink bg-[#F5F7FA] min-h-screen">
+
+<div class="max-w-2xl mx-auto px-5 py-12">
+  <div class="text-center mb-10">
+    <p class="heading-font font-extrabold text-xl text-primary tracking-tight mb-4">LỐI RA</p>
+    <h1 class="heading-font text-2xl sm:text-3xl font-bold mb-3">Điền thông tin để em bắt đầu dựng kênh riêng cho shop</h1>
+    <p class="text-ink/70 text-sm">Điền 1 lần, khoảng 3-5 phút. Càng đầy đủ, bản nháp đầu tiên càng sát ý anh/chị, đỡ phải sửa qua lại nhiều lần.</p>
+  </div>
+
+  <form id="intake-form" class="bg-white rounded-2xl shadow-sm border border-primary/10 p-6 sm:p-8">
+
+    <p class="f-section">Thông tin shop</p>
+    <div class="grid sm:grid-cols-2 gap-4 mb-1">
+      <div class="sm:col-span-2">
+        <label class="f-label" for="shop-name">Tên shop / thương hiệu *</label>
+        <input type="text" id="shop-name" class="f-input" placeholder="Vd: Shop Mẹ Bé An" required>
+      </div>
+      <div class="sm:col-span-2">
+        <label class="f-label" for="shop-industry">Ngành hàng / sản phẩm chính *</label>
+        <input type="text" id="shop-industry" class="f-input" placeholder="Vd: Đồ dùng mẹ và bé, quần áo trẻ em" required>
+      </div>
+      <div class="sm:col-span-2">
+        <label class="f-label" for="shop-links">Link shop hiện có (Shopee/TikTok Shop/Facebook...)</label>
+        <input type="text" id="shop-links" class="f-input" placeholder="Dán link, cách nhau bằng dấu phẩy nếu có nhiều link">
+      </div>
+      <div class="sm:col-span-2">
+        <label class="f-label" for="shop-brand">Logo / màu thương hiệu đã có sẵn chưa?</label>
+        <input type="text" id="shop-brand" class="f-input" placeholder="Có thì ghi màu chính (vd: xanh navy, cam), chưa có thì để trống - em sẽ gửi qua Zalo để anh/chị gửi file logo">
+      </div>
+    </div>
+
+    <p class="f-section">Số liệu kinh doanh (để tư vấn định giá đúng)</p>
+    <div class="grid sm:grid-cols-3 gap-4 mb-1">
+      <div>
+        <label class="f-label" for="biz-cost">Giá vốn TB / sản phẩm (đ)</label>
+        <input type="number" inputmode="numeric" id="biz-cost" class="f-input" placeholder="80000" min="0">
+      </div>
+      <div>
+        <label class="f-label" for="biz-price">Giá bán TB / sản phẩm (đ)</label>
+        <input type="number" inputmode="numeric" id="biz-price" class="f-input" placeholder="150000" min="0">
+      </div>
+      <div>
+        <label class="f-label" for="biz-orders">Số đơn / tháng</label>
+        <input type="number" inputmode="numeric" id="biz-orders" class="f-input" placeholder="300" min="0">
+      </div>
+    </div>
+
+    <p class="f-section">Tài khoản nhận tiền (để gắn QR thanh toán)</p>
+    <div class="grid sm:grid-cols-2 gap-4 mb-1">
+      <div>
+        <label class="f-label" for="bank-name">Tên ngân hàng *</label>
+        <input type="text" id="bank-name" class="f-input" placeholder="Vd: Vietcombank, MBBank, VPBank" required>
+      </div>
+      <div>
+        <label class="f-label" for="bank-account">Số tài khoản *</label>
+        <input type="text" inputmode="numeric" id="bank-account" class="f-input" placeholder="Số tài khoản nhận tiền bán hàng" required>
+      </div>
+      <div class="sm:col-span-2">
+        <label class="f-label" for="bank-account-name">Tên chủ tài khoản</label>
+        <input type="text" id="bank-account-name" class="f-input" placeholder="Đúng tên trên tài khoản ngân hàng">
+      </div>
+    </div>
+
+    <p class="f-section">Liên hệ</p>
+    <div class="grid sm:grid-cols-2 gap-4 mb-1">
+      <div>
+        <label class="f-label" for="contact-phone">SĐT / Zalo liên hệ chính *</label>
+        <input type="tel" inputmode="tel" id="contact-phone" class="f-input" placeholder="09xxxxxxxx" required>
+      </div>
+      <div>
+        <label class="f-label" for="contact-email">Email (không bắt buộc)</label>
+        <input type="email" id="contact-email" class="f-input" placeholder="ban@shop.com">
+      </div>
+      <div class="sm:col-span-2">
+        <label class="f-label" for="notes">Ghi chú thêm (gói đã chốt, yêu cầu riêng...)</label>
+        <textarea id="notes" class="f-input" rows="3" placeholder="Vd: Gói pilot 1.497.000đ, đã đặt cọc 748.500đ ngày ..."></textarea>
+      </div>
+    </div>
+
+    <p id="form-error" class="hidden text-red-600 text-sm mt-4"></p>
+    <p id="form-success" class="hidden text-primary font-semibold text-sm mt-4">✅ Đã gửi! Em nhận được thông tin và sẽ bắt đầu dựng bản nháp trong 1-2 ngày làm việc tới.</p>
+
+    <button type="submit" id="submit-btn" class="mt-6 w-full bg-accent text-ink px-8 py-3.5 rounded-xl text-base font-bold hover:opacity-90 transition-opacity cursor-pointer">
+      Gửi thông tin →
+    </button>
+    <p class="text-center text-xs text-ink/50 mt-4">Thông tin chỉ dùng để dựng kênh bán hàng cho shop của anh/chị, không chia sẻ cho bên thứ ba.</p>
+  </form>
+</div>
+
+<script>
+document.getElementById('intake-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var btn = document.getElementById('submit-btn');
+  var errEl = document.getElementById('form-error');
+  var okEl = document.getElementById('form-success');
+
+  var payload = {
+    shopName: document.getElementById('shop-name').value.trim(),
+    shopIndustry: document.getElementById('shop-industry').value.trim(),
+    shopLinks: document.getElementById('shop-links').value.trim(),
+    shopBrand: document.getElementById('shop-brand').value.trim(),
+    bizCost: document.getElementById('biz-cost').value,
+    bizPrice: document.getElementById('biz-price').value,
+    bizOrders: document.getElementById('biz-orders').value,
+    bankName: document.getElementById('bank-name').value.trim(),
+    bankAccount: document.getElementById('bank-account').value.trim(),
+    bankAccountName: document.getElementById('bank-account-name').value.trim(),
+    contactPhone: document.getElementById('contact-phone').value.trim(),
+    contactEmail: document.getElementById('contact-email').value.trim(),
+    notes: document.getElementById('notes').value.trim()
+  };
+
+  if (!payload.shopName || !payload.shopIndustry || !payload.bankName || !payload.bankAccount || !payload.contactPhone) {
+    errEl.textContent = 'Anh/chị điền đủ các mục có dấu * nhé.';
+    errEl.classList.remove('hidden');
+    okEl.classList.add('hidden');
+    return;
+  }
+  if (payload.contactPhone.replace(/\D/g, '').length < 9) {
+    errEl.textContent = 'Số điện thoại/Zalo chưa hợp lệ.';
+    errEl.classList.remove('hidden');
+    return;
+  }
+  errEl.classList.add('hidden');
+  btn.disabled = true;
+  btn.textContent = 'Đang gửi...';
+
+  fetch('/api/client-intake', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+    .then(function (res) {
+      if (!res.ok) throw new Error('failed');
+      okEl.classList.remove('hidden');
+      document.getElementById('intake-form').querySelectorAll('input, textarea, button').forEach(function (el) { el.disabled = true; });
+      btn.textContent = 'Đã gửi ✓';
+    })
+    .catch(function () {
+      btn.disabled = false;
+      btn.textContent = 'Gửi thông tin →';
+      errEl.textContent = 'Gửi chưa thành công, thử lại hoặc nhắn Zalo trực tiếp.';
+      errEl.classList.remove('hidden');
+    });
+});
+</script>
+
+</body>
+</html>
