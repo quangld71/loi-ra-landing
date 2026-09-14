@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lối Ra - Dựng Kênh Bán Hàng Riêng, Thoát Phụ Thuộc Phí Sàn</title>
-  <meta name="description" content="Kiểm tra lợi nhuận miễn phí 15 phút cho biết chính xác shop anh/chị đang mất bao nhiêu vào phí sàn Shopee/TikTok Shop. Sau đó dựng kênh bán hàng riêng: landing page + VietQR + báo đơn Telegram, bàn giao trong 5 ngày.">
+  <meta name="description" content="Tự kiểm tra lợi nhuận miễn phí 1 phút, biết ngay shop anh/chị đang mất bao nhiêu vào phí sàn Shopee/TikTok Shop. Sau đó dựng kênh bán hàng riêng: landing page + VietQR + báo đơn Telegram, bàn giao trong 5 ngày.">
   <meta property="og:title" content="Lối Ra - Thoát Phụ Thuộc Phí Sàn Shopee/TikTok Shop">
-  <meta property="og:description" content="Kiểm tra lợi nhuận miễn phí + dựng kênh bán hàng riêng cho seller TMĐT Việt Nam.">
+  <meta property="og:description" content="Tự kiểm tra lợi nhuận miễn phí + dựng kênh bán hàng riêng cho seller TMĐT Việt Nam.">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:,">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -34,6 +34,9 @@
   <style>
     body { font-family: 'Noto Sans', sans-serif; }
     h1, h2, h3, h4, .heading-font { font-family: 'Be Vietnam Pro', sans-serif; }
+    .calc-input { width: 100%; border: 1px solid rgba(30,58,95,0.2); border-radius: 0.6rem; padding: 0.65rem 0.9rem; font-size: 1rem; background: white; }
+    .calc-input:focus { outline: 2px solid #1E3A5F; outline-offset: 1px; }
+    .calc-label { display: block; font-size: 0.85rem; font-weight: 600; color: rgba(11,27,43,0.7); margin-bottom: 0.35rem; }
   </style>
 </head>
 <body class="font-body text-ink bg-[#F5F7FA]">
@@ -50,7 +53,7 @@
       <a href="#dich-vu" class="hover:text-primary transition-colors">Dựng kênh riêng</a>
       <a href="#faq" class="hover:text-primary transition-colors">Câu hỏi</a>
     </div>
-    <a href="https://zalo.me/0983062158" class="bg-accent text-ink px-5 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity cursor-pointer">
+    <a href="#giai-phap" class="bg-accent text-ink px-5 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity cursor-pointer">
       Nhận Kiểm Tra Miễn Phí
     </a>
   </div>
@@ -64,11 +67,11 @@
       Shop bán chạy đều,<br class="hidden sm:block"> nhưng cuối tháng vẫn không dư?
     </h1>
     <p class="text-lg sm:text-xl text-ink/70 mb-10 max-w-2xl mx-auto leading-relaxed">
-      Không phải anh/chị bán tệ. Phí sàn — hoa hồng, ads, content, voucher — đang âm thầm ăn mất một phần lợi nhuận mà nhiều seller không để ý tới. Em tính giúp con số thật, miễn phí, 15 phút.
+      Không phải anh/chị bán tệ. Phí sàn — hoa hồng, ads, content, voucher — đang âm thầm ăn mất một phần lợi nhuận mà nhiều seller không để ý tới. Nhập số liệu, tự tính ra con số thật ngay bên dưới — miễn phí, 1 phút.
     </p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-      <a href="https://zalo.me/0983062158" class="inline-block bg-accent text-ink px-8 py-4 rounded-xl text-lg font-bold hover:opacity-90 transition-opacity cursor-pointer">
-        Nhắn Zalo nhận kiểm tra lợi nhuận miễn phí →
+      <a href="#giai-phap" class="inline-block bg-accent text-ink px-8 py-4 rounded-xl text-lg font-bold hover:opacity-90 transition-opacity cursor-pointer">
+        Tự kiểm tra lợi nhuận ngay →
       </a>
       <a href="#dich-vu" class="text-primary font-semibold underline underline-offset-4 hover:text-secondary transition-colors cursor-pointer">
         Xem trước dịch vụ dựng kênh riêng
@@ -97,34 +100,90 @@
   </div>
 </section>
 
-<!-- Solution: Kiểm tra miễn phí, 3-step -->
+<!-- Solution: Công cụ tự kiểm tra lợi nhuận -->
 <section id="giai-phap" class="py-20 px-5 bg-[#F5F7FA]">
-  <div class="max-w-5xl mx-auto">
-    <div class="text-center mb-14 max-w-2xl mx-auto">
-      <h2 class="heading-font text-3xl font-bold mb-4">Trước khi tính chuyện thay đổi gì — biết chính xác mình đang mất bao nhiêu đã</h2>
-      <p class="text-ink/70">Kiểm tra lợi nhuận miễn phí 15 phút, không cần cài đặt gì, không thu phí.</p>
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-10 max-w-2xl mx-auto">
+      <h2 class="heading-font text-3xl font-bold mb-4">Tự kiểm tra lợi nhuận thực — nhập số, xem kết quả ngay</h2>
+      <p class="text-ink/70">Không cần nhắn tin chờ ai. Điền số liệu shop của anh/chị vào bên dưới, hệ thống tính ngay tại chỗ.</p>
     </div>
-    <div class="grid md:grid-cols-3 gap-8 text-center">
-      <div>
-        <div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
-        <h3 class="font-bold text-lg mb-2 heading-font">Gửi vài số liệu cơ bản</h3>
-        <p class="text-ink/70 text-sm leading-relaxed">Giá vốn, giá bán, số đơn/tháng của 1-2 sản phẩm chủ lực — nhắn qua Zalo là đủ.</p>
+
+    <!-- Step 1: Form nhập số liệu -->
+    <div id="calc-step-1" class="bg-white rounded-2xl shadow-sm border border-primary/10 p-6 sm:p-8">
+      <div class="grid sm:grid-cols-2 gap-5 mb-2">
+        <div>
+          <label class="calc-label" for="calc-platform">Sàn đang bán chính</label>
+          <select id="calc-platform" class="calc-input">
+            <option value="10">Shopee (phí sàn ước tính ~10%)</option>
+            <option value="15">TikTok Shop (phí sàn ước tính ~15%)</option>
+            <option value="12">Cả hai / chưa chắc (ước tính ~12%)</option>
+          </select>
+        </div>
+        <div>
+          <label class="calc-label" for="calc-fee-pct">% phí sàn thực tế (sửa nếu anh/chị biết chính xác)</label>
+          <input type="number" inputmode="decimal" id="calc-fee-pct" class="calc-input" value="10" min="0" max="100" step="0.1">
+        </div>
+        <div>
+          <label class="calc-label" for="calc-cost">Giá vốn / sản phẩm (đ)</label>
+          <input type="number" inputmode="numeric" id="calc-cost" class="calc-input" placeholder="Vd: 80000" min="0">
+        </div>
+        <div>
+          <label class="calc-label" for="calc-price">Giá bán / sản phẩm (đ)</label>
+          <input type="number" inputmode="numeric" id="calc-price" class="calc-input" placeholder="Vd: 150000" min="0">
+        </div>
+        <div>
+          <label class="calc-label" for="calc-orders">Số đơn / tháng</label>
+          <input type="number" inputmode="numeric" id="calc-orders" class="calc-input" placeholder="Vd: 300" min="0">
+        </div>
+        <div>
+          <label class="calc-label" for="calc-ads">Chi phí quảng cáo / tháng (đ) — để 0 nếu không chạy ads</label>
+          <input type="number" inputmode="numeric" id="calc-ads" class="calc-input" placeholder="0" value="0" min="0">
+        </div>
       </div>
-      <div>
-        <div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
-        <h3 class="font-bold text-lg mb-2 heading-font">Em tính lợi nhuận thực</h3>
-        <p class="text-ink/70 text-sm leading-relaxed">Trừ đủ: giá vốn, phí sàn, ads, voucher, hoàn hàng — ra đúng số anh/chị thực sự giữ lại.</p>
-      </div>
-      <div>
-        <div class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
-        <h3 class="font-bold text-lg mb-2 heading-font">Nhận kết quả + gợi ý</h3>
-        <p class="text-ink/70 text-sm leading-relaxed">Con số cụ thể + hướng khắc phục. Dùng luôn hay không, tùy anh/chị.</p>
-      </div>
+      <p id="calc-error" class="hidden text-red-600 text-sm mt-3"></p>
+      <button id="calc-submit-btn" type="button" class="mt-5 w-full sm:w-auto bg-accent text-ink px-8 py-3.5 rounded-xl text-base font-bold hover:opacity-90 transition-opacity cursor-pointer">
+        Tính lợi nhuận ngay →
+      </button>
     </div>
-    <div class="text-center mt-12">
-      <a href="https://zalo.me/0983062158" class="inline-block bg-accent text-ink px-8 py-4 rounded-xl text-lg font-bold hover:opacity-90 transition-opacity cursor-pointer">
-        Nhắn "KIỂM TRA" qua Zalo →
-      </a>
+
+    <!-- Step 2: Kết quả + form liên hệ -->
+    <div id="calc-step-2" class="hidden mt-6">
+      <div class="bg-primary rounded-2xl p-6 sm:p-8 text-white mb-6">
+        <p class="text-white/70 text-sm mb-1">Doanh thu ước tính / tháng</p>
+        <p id="r-revenue" class="text-2xl font-semibold mb-4">—</p>
+        <p class="text-white/70 text-sm mb-1">Phí sàn đang lấy đi / tháng</p>
+        <p id="r-fee" class="text-2xl font-semibold text-accent mb-4">—</p>
+        <div class="border-t border-white/15 pt-4">
+          <p class="text-white/70 text-sm mb-1">Lợi nhuận thực còn lại / tháng</p>
+          <p id="r-profit" class="heading-font text-4xl font-extrabold text-accent mb-1">—</p>
+          <p class="text-white/60 text-sm">Tương đương <span id="r-percent">—</span>% doanh thu</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-primary/10">
+        <h3 class="font-bold text-lg mb-2 heading-font">Muốn tư vấn cụ thể cách giữ lại phần phí sàn đang mất?</h3>
+        <p class="text-ink/70 text-sm mb-5">Không bắt buộc — chỉ để lại nếu anh/chị muốn em gửi thêm gợi ý dựa đúng trên con số của shop. Thông tin chỉ dùng để liên hệ tư vấn, không chia sẻ cho bên thứ ba.</p>
+        <div class="grid sm:grid-cols-2 gap-4 mb-4">
+          <div class="sm:col-span-2">
+            <label class="calc-label" for="lead-name">Tên shop / tên anh chị</label>
+            <input type="text" id="lead-name" class="calc-input" placeholder="Vd: Shop Mẹ Bé An">
+          </div>
+          <div>
+            <label class="calc-label" for="lead-phone">Số điện thoại / Zalo *</label>
+            <input type="tel" inputmode="tel" id="lead-phone" class="calc-input" placeholder="09xxxxxxxx">
+          </div>
+          <div>
+            <label class="calc-label" for="lead-email">Email (không bắt buộc)</label>
+            <input type="email" id="lead-email" class="calc-input" placeholder="ban@shop.com">
+          </div>
+        </div>
+        <p id="lead-error" class="hidden text-red-600 text-sm mb-3"></p>
+        <p id="lead-success" class="hidden text-primary font-semibold text-sm mb-3">✅ Đã gửi! Em sẽ liên hệ trong 24h qua Zalo/SĐT anh/chị để lại.</p>
+        <button id="lead-submit-btn" type="button" class="w-full sm:w-auto bg-primary text-white px-8 py-3.5 rounded-xl text-base font-bold hover:opacity-90 transition-opacity cursor-pointer">
+          Nhận tư vấn chi tiết →
+        </button>
+      </div>
+      <p class="text-center text-sm text-ink/60 mt-4">Hoặc <a href="https://zalo.me/0983062158" class="text-primary font-semibold underline underline-offset-4">nhắn Zalo trực tiếp</a> nếu muốn trao đổi ngay.</p>
     </div>
   </div>
 </section>
@@ -250,7 +309,7 @@
           Chưa ai làm trước, sao em tin được?
           <svg class="w-5 h-5 transition-transform shrink-0 ml-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
-        <div class="hidden px-6 pb-4 text-ink/70 text-sm leading-relaxed">Đúng là dịch vụ này còn mới, chưa có case study để khoe. Vì vậy bước kiểm tra hoàn toàn miễn phí — anh/chị thấy con số thật của shop mình trước, không mất gì để thử. Với gói chính, thanh toán chia 2 lần: cọc 50% để bắt đầu, duyệt bản nháp xong mới trả nốt 50% còn lại.</div>
+        <div class="hidden px-6 pb-4 text-ink/70 text-sm leading-relaxed">Đúng là dịch vụ này còn mới, chưa có case study để khoe. Vì vậy công cụ kiểm tra lợi nhuận hoàn toàn miễn phí và tự động — anh/chị thấy con số thật của shop mình ngay, không mất gì để thử. Với gói chính, thanh toán chia 2 lần: cọc 50% để bắt đầu, duyệt bản nháp xong mới trả nốt 50% còn lại.</div>
       </div>
       <div class="bg-white border border-primary/10 rounded-xl overflow-hidden">
         <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('svg').classList.toggle('rotate-180')" class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center cursor-pointer hover:bg-primary/5">
@@ -273,6 +332,13 @@
         </button>
         <div class="hidden px-6 pb-4 text-ink/70 text-sm leading-relaxed">Được, kênh riêng là kênh bổ sung song song, không phải rời sàn hoàn toàn. Anh/chị vẫn duy trì gian hàng trên sàn như bình thường, đồng thời có thêm kênh không mất % cho những khách đã biết đến shop.</div>
       </div>
+      <div class="bg-white border border-primary/10 rounded-xl overflow-hidden">
+        <button onclick="this.nextElementSibling.classList.toggle('hidden');this.querySelector('svg').classList.toggle('rotate-180')" class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center cursor-pointer hover:bg-primary/5">
+          Số liệu em nhập vào công cụ kiểm tra có bị lộ không?
+          <svg class="w-5 h-5 transition-transform shrink-0 ml-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="hidden px-6 pb-4 text-ink/70 text-sm leading-relaxed">Không. Số liệu chỉ dùng để tính kết quả hiển thị cho anh/chị và (nếu anh/chị chủ động để lại SĐT/email) để em liên hệ tư vấn — không chia sẻ, không bán cho bên thứ ba.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -281,9 +347,9 @@
 <section class="py-20 px-5 bg-primary text-white">
   <div class="max-w-2xl mx-auto text-center">
     <h2 class="heading-font text-3xl font-bold mb-4">Bắt đầu bằng con số thật, không phải lời hứa</h2>
-    <p class="text-white/70 mb-8">15 phút, miễn phí, không ràng buộc. Biết mình đang mất bao nhiêu trước khi quyết định làm gì tiếp.</p>
-    <a href="https://zalo.me/0983062158" class="inline-block bg-accent text-ink px-8 py-4 rounded-xl text-lg font-bold hover:opacity-90 transition-opacity cursor-pointer">
-      Nhắn Zalo nhận kiểm tra lợi nhuận miễn phí →
+    <p class="text-white/70 mb-8">1 phút, miễn phí, không ràng buộc. Biết mình đang mất bao nhiêu trước khi quyết định làm gì tiếp.</p>
+    <a href="#giai-phap" class="inline-block bg-accent text-ink px-8 py-4 rounded-xl text-lg font-bold hover:opacity-90 transition-opacity cursor-pointer">
+      Tự kiểm tra lợi nhuận ngay →
     </a>
   </div>
 </section>
@@ -299,11 +365,108 @@
 
 <!-- Sticky mobile CTA -->
 <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t border-primary/10 p-3">
-  <a href="https://zalo.me/0983062158" class="block text-center bg-accent text-ink px-6 py-3.5 rounded-xl font-bold cursor-pointer">
+  <a href="#giai-phap" class="block text-center bg-accent text-ink px-6 py-3.5 rounded-xl font-bold cursor-pointer">
     Nhận Kiểm Tra Miễn Phí →
   </a>
 </div>
 <div class="h-16 md:hidden"></div>
+
+<!-- Calculator logic -->
+<script>
+(function () {
+  var platformSel = document.getElementById('calc-platform');
+  var feeInput = document.getElementById('calc-fee-pct');
+  platformSel.addEventListener('change', function () {
+    feeInput.value = platformSel.value;
+  });
+
+  var lastCalc = null;
+
+  function fmtVND(n) {
+    return Math.round(n).toLocaleString('vi-VN') + 'đ';
+  }
+
+  document.getElementById('calc-submit-btn').addEventListener('click', function () {
+    var cost = parseFloat(document.getElementById('calc-cost').value);
+    var price = parseFloat(document.getElementById('calc-price').value);
+    var orders = parseFloat(document.getElementById('calc-orders').value);
+    var ads = parseFloat(document.getElementById('calc-ads').value) || 0;
+    var feePct = parseFloat(feeInput.value) || 0;
+    var errEl = document.getElementById('calc-error');
+
+    if (!cost || !price || !orders || cost <= 0 || price <= 0 || orders <= 0) {
+      errEl.textContent = 'Anh/chị nhập đủ giá vốn, giá bán và số đơn/tháng (số lớn hơn 0) nhé.';
+      errEl.classList.remove('hidden');
+      return;
+    }
+    if (price <= cost) {
+      errEl.textContent = 'Giá bán đang thấp hơn hoặc bằng giá vốn — kiểm tra lại số liệu.';
+      errEl.classList.remove('hidden');
+      return;
+    }
+    errEl.classList.add('hidden');
+
+    var revenue = price * orders;
+    var costTotal = cost * orders;
+    var feeAmount = revenue * (feePct / 100);
+    var totalCost = costTotal + feeAmount + ads;
+    var profit = revenue - totalCost;
+    var profitPct = (profit / revenue) * 100;
+
+    document.getElementById('r-revenue').textContent = fmtVND(revenue);
+    document.getElementById('r-fee').textContent = fmtVND(feeAmount) + ' /tháng';
+    document.getElementById('r-profit').textContent = fmtVND(profit);
+    document.getElementById('r-percent').textContent = profitPct.toFixed(1);
+
+    lastCalc = {
+      cost: cost, price: price, orders: orders, ads: ads, feePct: feePct,
+      revenue: revenue, feeAmount: feeAmount, profit: profit, profitPct: profitPct
+    };
+
+    var step2 = document.getElementById('calc-step-2');
+    step2.classList.remove('hidden');
+    step2.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  document.getElementById('lead-submit-btn').addEventListener('click', function () {
+    var name = document.getElementById('lead-name').value.trim();
+    var phone = document.getElementById('lead-phone').value.trim();
+    var email = document.getElementById('lead-email').value.trim();
+    var errEl = document.getElementById('lead-error');
+    var okEl = document.getElementById('lead-success');
+    var btn = document.getElementById('lead-submit-btn');
+
+    if (!phone || phone.replace(/\D/g, '').length < 9) {
+      errEl.textContent = 'Anh/chị nhập số điện thoại/Zalo hợp lệ để em liên hệ nhé.';
+      errEl.classList.remove('hidden');
+      okEl.classList.add('hidden');
+      return;
+    }
+    errEl.classList.add('hidden');
+    btn.disabled = true;
+    btn.textContent = 'Đang gửi...';
+
+    var payload = Object.assign({ name: name, phone: phone, email: email }, lastCalc || {});
+
+    fetch('/api/lead-capture', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (res) {
+        if (!res.ok) throw new Error('failed');
+        okEl.classList.remove('hidden');
+        btn.textContent = 'Đã gửi ✓';
+      })
+      .catch(function () {
+        btn.disabled = false;
+        btn.textContent = 'Nhận tư vấn chi tiết →';
+        errEl.textContent = 'Gửi chưa thành công, thử lại hoặc nhắn Zalo trực tiếp.';
+        errEl.classList.remove('hidden');
+      });
+  });
+})();
+</script>
 
 </body>
 </html>
